@@ -188,7 +188,7 @@ export function ChatInput({
             maxRows={5}
             className="text-normal px-3 resize-none ring-0 bg-inherit w-full m-0 outline-none"
             required={true}
-            placeholder="Describe your app..."
+            placeholder="Describe how ScyAI can help you... — e.g., describe an app, a project, a task. The SCY is the limit!"
             disabled={isErrored}
             value={input}
             onChange={handleInputChange}
@@ -270,10 +270,10 @@ export function ChatInput({
         </div>
       </div>
       <p className="text-xs text-muted-foreground mt-2 text-center">
-        Fragments is an open-source project made by{' '}
-        <a href="https://e2b.dev" target="_blank" className="text-[#ff8800]">
-          ✶ E2B
+        <a href="https://scyai.com" target="_blank" className="text-[#00FFEF]">
+          ScyAI{' '}
         </a>
+        your AI teammate
       </p>
     </form>
   )
