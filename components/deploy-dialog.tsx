@@ -61,38 +61,19 @@ export function DeployDialog({
       <DropdownMenuTrigger asChild>
         <Button variant="default">
           <Logo style="e2b" width={16} height={16} className="mr-2" />
-          Deploy to E2B
+          Share
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="p-4 w-80 flex flex-col gap-2">
-        <div className="text-sm font-semibold">Deploy to E2B</div>
+        <div className="text-sm font-semibold">Share</div>
         <div className="text-sm text-muted-foreground">
-          Deploying the fragment will make it publicly accessible to others via
-          link.
+          Deploying the app/website will make it publicly accessible to others
+          via link.
         </div>
         <div className="text-sm text-muted-foreground">
-          The fragment will be available up until the expiration date you choose
-          and you&apos;ll be billed based on our{' '}
-          <a
-            href="https://e2b.dev/docs/pricing"
-            target="_blank"
-            className="underline"
-          >
-            Compute pricing
-          </a>
-          .
+          The app will be available up until the expiration date you choose.
         </div>
-        <div className="text-sm text-muted-foreground">
-          All new accounts receive $100 worth of compute credits. Upgrade to{' '}
-          <a
-            href="https://e2b.dev/dashboard?tab=billing"
-            target="_blank"
-            className="underline"
-          >
-            Pro tier
-          </a>{' '}
-          for longer expiration.
-        </div>
+
         <form className="flex flex-col gap-2" onSubmit={publishURL}>
           {publishedURL ? (
             <div className="flex items-center gap-2">
